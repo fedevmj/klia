@@ -4,39 +4,99 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" type="image/x-icon" href="images/faviconV2.png">
 
-    <link rel="apple-touch-icon-precomposed" href="images/mobile_web_icon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- SEO -->
+    <meta name="title" content="생명보험협회">
+    <meta name="description" content="생명보험협회 클론코딩 사이트입니다." />
+    <meta name="keywords" content="생명보험협회, KLIA" />
+    <meta name="author" content="Minjae Lee" />
+
+    <!-- Open Graph -->
+    <meta name="og:site_name" content="생명보험협회" />
+    <meta name="og:title" content="생명보험협회" />
+    <meta name="og:description" content="생명보험협회 클론코딩 사이트입니다." />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="https://fedevmj.github.io/klia/" />
+    <meta name="og:image" content="https://fedevmj.github.io/klia/images/t_logo.jpg" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <title>생명보험협회</title>
     <!--[if lt IE 9]>
-  <script src="js/html5shiv.js"></script>
-  <![endif]-->
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- prefixfree -->
     <script src="js/prefixfree.min.js"></script>
+    <!-- 반응형 -->
     <script src="js/respond.min.js"></script>
+    <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
-
+    <!-- reset -->
     <link rel="stylesheet" href="css/reset.css">
+    <!-- animation -->
     <link rel="stylesheet" href="css/animations.css">
-
+    <!-- swiper -->
     <script src="js/swiper/swiper.min.js"></script>
     <link rel="stylesheet" href="js/swiper/swiper.min.css">
-
-    <!-- aos 관련 코드 -->
+    <!-- aos -->
     <link href="js/aos/aos.css" rel="stylesheet">
     <script src="js/aos/aos.js"></script>
-    <!-- font-awsome -->
+    <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-    <!-- waypoint -->    
+    <!-- waypoints -->
     <script src="js/jquery.waypoints.js"></script>
     <!-- TweenMax -->
     <script src="js/tweenmax/gsap.min.js"></script>
+    <!-- main -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
 
 <body>
+    <!-- 모달창 -->
+    <div class="modal">
+        <div class="modal-wrap">
+            <div class="modal-box modal-front">
+                <i class="fas fa-heartbeat"></i>
+                <h1> KOREA LIFE INS ASSOC. </h1>
+                <h2>이 사이트는 스터디용으로 제작되었으며<br>
+                    리소스는 원저작자에게 있습니다.</h2>
+                <span>본 사이트는 Chrome에 최적화 되어있습니다.</span>
+            </div>
+
+            <div class="modal-box modal-back">
+                <ul class="modal-list">
+                    <h3><i class="fas fa-highlighter"></i> <u>다음 내용을 적용하였습니다</u> :) </h3>
+                    <li>1. <b>반응형</b> 웹페이지를 구현하였습니다.</li>
+                    <li>2. <b>마우스 휠 이벤트</b>를 이용하여 스크롤할 때마다 각 섹션이 <b>전체화면</b>으로 이동하는 모션 이벤트를 구현하였습니다.</li>
+                    <li>3. <b>AOS와 Waypoints 라이브러리</b>를 이용하여 스크롤시 애니메이션 효과를 추가하였습니다.</li>
+                </ul>
+            </div>
+
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
     <!-- 오른쪽 고정 기능 -->
     <div class="control">
         <ul class="control-menu">
@@ -112,6 +172,7 @@
                                     <li><a href="#">-회사별사회공헌활동</a></li>
                                 </ul>
                             </li>
+
                             <li>
                                 <a href="#" class="submenu-list-cate">공시실</a>
                                 <a href="#" class="submenu-list-cate">사회공헌활동</a>
@@ -122,6 +183,7 @@
                                     <li><a href="#">-보험사기 홍보</a></li>
                                 </ul>
                             </li>
+
                             <li>
                                 <a href="#" class="submenu-list-cate">보험 다모아</a>
                                 <a href="#" class="submenu-list-cate">보험대리점공시</a>
@@ -149,9 +211,11 @@
                                     <li><a href="#">-보험대리점 순회교육 안내</a></li>
                                 </ul>
                             </li>
+
                             <li>
                                 <a href="#" class="submenu-list-cate">자격시험센터</a>
                             </li>
+
                             <li>
                                 <a href="#" class="submenu-list-cate">우수인증설계사</a>
                             </li>
@@ -205,7 +269,6 @@
                                 </ul>
                                 <a href="#" class="submenu-list-cate">부동산 투기의혹 불법대출<br>자진신고센터</a>
                             </li>
-
                         </ul>
                     </div>
 
@@ -229,6 +292,7 @@
                                     <li><a href="#">-회원사소식</a></li>
                                 </ul>
                             </li>
+
                             <li>
                                 <a href="#" class="submenu-list-cate">간행물</a>
                                 <ul class="submenu-list-sub">
@@ -240,6 +304,7 @@
                                     <li><a href="#">-협회60년사</a></li>
                                 </ul>
                             </li>
+
                             <li>
                                 <a href="#" class="submenu-list-cate">회원사 및 유관기관</a>
                                 <ul class="submenu-list-sub">
@@ -254,7 +319,6 @@
                 </div>
             </div>
 
-
         </header>
         <!--// 상단  -->
         <!-- 메인 -->
@@ -264,10 +328,12 @@
 
                 <div class="container">
                     <!-- <p class="mb-10">"New Value Creation"</p> -->
-                    <h2 class="mb-70" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">생명보험 산업의 새로운 가치 창출</h2>
-                    <div class="visual-wrap" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400">
-                        <div class="visual-box mr-20">
-                            <div class="visual-box-cont box-h-50 mb-20">
+                    <h2 class="mb-70" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100"
+                        data-aos-offset="0">생명보험 산업의 새로운 가치 창출</h2>
+                    <div class="visual-wrap" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400"
+                        data-aos-offset="0">
+                        <div class="visual-box">
+                            <div class="visual-box-cont box-h-50 mb-20 visual-box-sm">
                                 <a href="#" class="visual-link pd-all-25">
                                     <h3>생명보험협회</h3>
                                     <p>보험가입자의 권익보호 및<br>건전한 보험문화 확산</p>
@@ -275,7 +341,7 @@
                                     <img src="images/icon_s0104.png" alt="생명보험협회">
                                 </a>
                             </div>
-                            <div class="visual-box-cont box-h-50 pd-all-25 box-blue">
+                            <div class="visual-box-cont box-h-50 pd-all-25 box-blue visual-box-sm">
                                 <p>자주찾는 메뉴</p>
                                 <ul class="favo-list clearfix">
                                     <li>
@@ -299,7 +365,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="visual-box mr-20">
+                        <div class="visual-box">
                             <div class="visual-box-cont">
                                 <a href="#" class="visual-cate-link  pt-38 pr-45 pb-38 pl-45">
                                     <img src="images/icon_s0101.png" alt="" class="visual-icon">
@@ -307,10 +373,9 @@
                                     <p class="visual-desc-off">생명보험소비자가<br>꼭 알아야 할 주요 정보</p>
                                     <p class="visual-desc-on">내보험찾아줌, 공시실,<br>소비자포털, 보험다모아 등</p>
                                 </a>
-
                             </div>
                         </div>
-                        <div class="visual-box mr-20">
+                        <div class="visual-box">
                             <div class="visual-box-cont">
                                 <a href="#" class="visual-cate-link pt-38 pr-45 pb-38 pl-45">
                                     <img src="images/icon_s0102.png" alt="" class="visual-icon">
@@ -370,9 +435,6 @@
                             </div>
 
                             <button class="sw-vs-notice-next"></button>
-
-                           
-
                         </div>
 
                         <div class="visual-news-right">
@@ -385,7 +447,7 @@
                                         <a href="#">[보도자료] 생보업계 위기극복과 지속성장 기반 마련을 위한 3대 핵심과제 추진_2022신년 비대면 기자간담회</a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="#">[보도자료] 기존 실손 가입자가 ’22년 6월까지 4세대 실손보험으로 전환시 1년간 보험료 50% 할인 혜택을
+                                        <a href="#">[보도자료] 기존 실손 가입자가 '22년 6월까지 4세대 실손보험으로 전환시 1년간 보험료 50% 할인 혜택을
                                             제공합니다.</a>
                                     </div>
                                     <div class="swiper-slide">
@@ -395,7 +457,7 @@
                                         <a href="#">[보도자료] 2022 달라지는 보험제도</a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="#">[보도자료] ‘제16차 생명보험 성향조사 결과’</a>
+                                        <a href="#">[보도자료] '제16차 생명보험 성향조사 결과'</a>
                                     </div>
                                     <div class="swiper-slide">
                                         <a href="#">[보도자료] 생명보험사회공헌위원회, 걸음 기부로 취약계층을 위한 기부금 1억 원 전달</a>
@@ -403,29 +465,30 @@
                                 </div>
                             </div>
                             <button class="sw-vs-news-next"></button>
-
                         </div>
                     </div>
                 </div>
 
             </section>
+
             <!-- 협회소식 -->
             <section class="news">
                 <div class="container">
                     <h2 class="section-title">생명보험협회</h2>
-                    <div class="news-top mb-20 clearfix" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="news-top mb-20 clearfix" data-aos="fade-up" data-aos-duration="800"
+                        data-aos-delay="100">
                         <div class="news-wrap mr-20">
 
                             <a href="#" class="news-more">more</a>
 
                             <div class="news-menu clearfix">
-                                <a href="#" class="news-menu-active">공지사항</a>
-                                <a href="#">보도자료</a>
+                                <a href="#">공지사항</a>
+                                <a href="#" class="news-menu-active">보도자료</a>
                                 <a href="#">회원사소식</a>
                             </div>
 
                             <div class="news-cont">
-                                <ul class="news-list notice news-list-active">
+                                <ul class="news-list notice">
                                     <li><a href="#">
                                             <입찰재공고> FY2021 우수인증설계사 소식지 발간
                                         </a> <span class="date">2022-01-27</span></li>
@@ -444,14 +507,15 @@
                                             <입찰재공고> 월간 생명보험 인쇄계약(연간, 면당단가)
                                         </a> <span class="date">2022-01-27</span></li>
                                 </ul>
-                                <ul class="news-list report">
+                                <ul class="news-list report news-list-active">
                                     <li><a href="#">[보도자료] 생보업계 위기극복과 지속성장 기반 마련을 위한 3대 핵심과제 추진_2022신년 비대면 기자간담회</a>
-                                        <span class="date">2022-01-27</span></li>
-                                    <li><a href="#">[보도자료] 기존 실손 가입자가 ’22년 6월까지 4세대 실손보험으로 전환시 1년간 보험료 50% 할인 혜택을
+                                        <span class="date">2022-01-27</span>
+                                    </li>
+                                    <li><a href="#">[보도자료] 기존 실손 가입자가 '2년 6월까지 4세대 실손보험으로 전환시 1년간 보험료 50% 할인 혜택을
                                             제공합니다.</a> <span class="date">2022-01-27</span></li>
                                     <li><a href="#">[보도자료] 보험범죄방지 유공자 시상</a> <span class="date">2022-01-27</span></li>
                                     <li><a href="#">[보도자료] 2022 달라지는 보험제도</a> <span class="date">2022-01-27</span></li>
-                                    <li><a href="#">[보도자료] ‘제16차 생명보험 성향조사 결과’</a> <span class="date">2022-01-27</span>
+                                    <li><a href="#">[보도자료] '제16차 생명보험 성향조사 결과'</a> <span class="date">2022-01-27</span>
                                     </li>
                                     <li><a href="#">[보도자료] 생명보험사회공헌위원회, 걸음 기부로 취약계층을 위한 기부금 1억 원 전달</a> <span
                                             class="date">2022-01-27</span></li>
@@ -472,7 +536,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="news-quick mr-20 clearfix p">
+                        <div class="news-quick mr-20 clearfix">
                             <a href="#" class="news-quick-icon">
                                 협회장 인사말
                             </a>
@@ -529,7 +593,6 @@
                                     </a> <span class="date">2022-01-27</span></li>
                             </ul>
 
-
                         </div>
 
                         <div class="news-link-wrap">
@@ -557,6 +620,7 @@
                     </div>
                 </div>
             </section>
+
             <!-- 소비자 -->
             <section class="customer">
                 <div class="container">
@@ -588,12 +652,9 @@
                                 </li>
                             </ul>
 
-
                         </div>
 
-                        <div class="customer-img">
-
-                        </div>
+                        <div class="customer-img"></div>
                     </div>
                     <div class="customer-bottom clearfix">
 
@@ -636,12 +697,14 @@
                     </div>
                 </div>
             </section>
+
             <!-- 모집종사자 -->
             <section class="worker">
                 <div class="container">
                     <h2 class="section-title">모집종사자</h2>
                     <div class="worker-list clearfix">
-                        <a href="#" class="worker-list-box" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+                        <a href="#" class="worker-list-box" data-aos="zoom-in" data-aos-duration="800"
+                            data-aos-delay="100">
                             <h3>모집종사자 <br>관련안내 및 조회</h3>
                             <p>설계사 등록조회, 말소신청<br>e클린보험 서비스,<br>보험모집종사자 등록증 출력</p>
                             <div class="worker-ani">
@@ -649,7 +712,8 @@
                                 <img src="images/recruit_obj0102.png" alt="그림" class="ani-1-2">
                             </div>
                         </a>
-                        <a href="#" class="worker-list-box" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                        <a href="#" class="worker-list-box" data-aos="zoom-in" data-aos-duration="800"
+                            data-aos-delay="200">
                             <h3>보험대리점 관리자</h3>
                             <p>보험대리점 검사관련 안내 및<br>참고자료</p>
                             <div class="worker-ani">
@@ -658,10 +722,10 @@
                                 <img src="images/recruit_obj0403.png" alt="그림" class="ani-2-3">
                                 <img src="images/recruit_obj0404.png" alt="그림" class="ani-2-4">
                                 <img src="images/recruit_obj0405.png" alt="그림" class="ani-2-5">
-
                             </div>
                         </a>
-                        <a href="#" class="worker-list-box" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+                        <a href="#" class="worker-list-box" data-aos="zoom-in" data-aos-duration="800"
+                            data-aos-delay="300">
                             <h3>자격시험센터</h3>
                             <p>설계사, 변액보험, 언더라이터, 종합자산관리사</p>
                             <div class="worker-ani">
@@ -670,7 +734,8 @@
                                 <img src="images/recruit_obj0203.png" alt="그림" class="ani-3-3">
                             </div>
                         </a>
-                        <a href="#" class="worker-list-box" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+                        <a href="#" class="worker-list-box" data-aos="zoom-in" data-aos-duration="800"
+                            data-aos-delay="400">
                             <h3>우수인증설계사</h3>
                             <p>전문성과 윤리성을 충족한<br>우수설계사</p>
                             <div class="worker-ani">
@@ -685,6 +750,7 @@
                     </div>
                 </div>
             </section>
+
             <!-- 회원사 -->
             <section class="partner">
                 <div class="container">
@@ -717,6 +783,7 @@
                     </div>
                 </div>
             </section>
+
             <!-- 관련업체 배너 -->
             <section class="banner">
                 <div class="container">
@@ -725,96 +792,95 @@
 
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_1.png" alt=""></a>
+                                <a href="#"><img src="images/banner_1.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_2.png" alt=""></a>
+                                <a href="#"><img src="images/banner_2.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_3.png" alt=""></a>
+                                <a href="#"><img src="images/banner_3.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_4.png" alt=""></a>
+                                <a href="#"><img src="images/banner_4.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_5.png" alt=""></a>
+                                <a href="#"><img src="images/banner_5.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_6.png" alt=""></a>
+                                <a href="#"><img src="images/banner_6.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_7.png" alt=""></a>
+                                <a href="#"><img src="images/banner_7.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_8.png" alt=""></a>
+                                <a href="#"><img src="images/banner_8.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_9.png" alt=""></a>
+                                <a href="#"><img src="images/banner_9.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_10.png" alt=""></a>
+                                <a href="#"><img src="images/banner_10.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_11.png" alt=""></a>
+                                <a href="#"><img src="images/banner_11.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_12.png" alt=""></a>
+                                <a href="#"><img src="images/banner_12.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_13.png" alt=""></a>
+                                <a href="#"><img src="images/banner_13.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_14.png" alt=""></a>
+                                <a href="#"><img src="images/banner_14.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_15.png" alt=""></a>
+                                <a href="#"><img src="images/banner_15.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_16.png" alt=""></a>
+                                <a href="#"><img src="images/banner_16.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_17.png" alt=""></a>
+                                <a href="#"><img src="images/banner_17.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_18.png" alt=""></a>
+                                <a href="#"><img src="images/banner_18.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_19.png" alt=""></a>
+                                <a href="#"><img src="images/banner_19.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_20.png" alt=""></a>
+                                <a href="#"><img src="images/banner_20.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_21.png" alt=""></a>
+                                <a href="#"><img src="images/banner_21.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_22.png" alt=""></a>
+                                <a href="#"><img src="images/banner_22.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_23.png" alt=""></a>
+                                <a href="#"><img src="images/banner_23.png" alt="배너"></a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#"><img src="images/banner_24.png" alt=""></a>
+                                <a href="#"><img src="images/banner_24.png" alt="배너"></a>
                             </div>
                         </div>
 
                     </div>
 
-
                     <button class="sw-banner-prev"></button>
                     <button class="sw-banner-next"></button>
-
                 </div>
             </section>
         </div>
         <!--//메인  -->
+
         <!-- 하단 -->
         <footer class="footer">
             <div class="container clearfix">
-                <div class="footer-left clearfix">
+                <div class="footer-lef">
 
                     <a href="index.html" class="footer-logo">
-                        <img src="images/t_logo.jpg" alt="">
+                        <img src="images/t_logo.jpg" alt="하단로고">
                     </a>
 
                     <ul class="footer-list">
